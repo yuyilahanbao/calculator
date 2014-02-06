@@ -6,7 +6,7 @@
 #include"fraction.h"
 #include"preexpr.h"
 
-void help()
+void print_help()
 {
 	system("cat README");
 }
@@ -15,7 +15,7 @@ int main(int argc,char *argv[])
 {
 	fraction a;
 	int flag;
-	if ((argc == 2) && ((strcmp(argv[1],"-h") == 0) || (strcmp("--help") == 0))) {
+	if ((argc == 2) && ((strcmp(argv[1],"-h") == 0) || (strcmp(argv[1],"--help") == 0))) {
 		print_help(); return 0;
 	}
 	char s[30000];
